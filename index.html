@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins CI/CD Demo 1</title>
+    <style>
+        body { background-color: #212544; color: white; font-family: 'Segoe UI', Tahoma, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        h1 { color: #4fc3f7; margin-bottom: 5px; font-size: 2.5em; }
+        p { color: #aeb4d1; margin-top: 0; margin-bottom: 30px; }
+        .card-container { background-color: #2b305b; padding: 30px; border-radius: 15px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .badge { background-color: #4CAF50; color: white; padding: 8px 20px; border-radius: 20px; font-weight: bold; display: inline-block; margin-bottom: 25px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .item { background-color: #353b6e; padding: 15px 20px; border-radius: 10px; text-align: left; min-width: 150px; }
+        .item-title { font-size: 0.85em; color: #aeb4d1; margin-bottom: 5px; }
+        .item-value { font-size: 1.2em; font-weight: bold; }
+        .footer { margin-top: 30px; color: #626a99; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+    <svg fill="#ffffff" height="50px" width="50px" viewBox="0 0 512 512"><g><path d="M495.9,209.8l-40.4-12.2c-5.8-19.4-14.3-37.5-24.9-54.1l20.4-36.9c5.1-9.2,3.3-20.7-4.3-28.3l-34-34 c-7.6-7.6-19.1-9.4-28.3-4.3l-36.9,20.4c-16.6-10.6-34.7-19.1-54.1-24.9l-12.2-40.4C278.6,13,269,5.7,258.1,5.7h-48 C199,5.7,189.4,13,186.7,23.3l-12.2,40.4c-19.4,5.8-37.5,14.3-54.1,24.9L83.5,68.2c-9.2-5.1-20.7-3.3-28.3,4.3l-34,34 c-7.6,7.6-9.4,19.1-4.3,28.3l20.4,36.9c-10.6,16.6-19.1,34.7-24.9,54.1L0.2,238.1C-2.5,248.8,4.8,258.4,15.7,258.4h48 c11.1,0,20.7-7.3,23.4-17.6l12.2-40.4c5.8-19.4,14.3-37.5,24.9-54.1l-20.4-36.9c-5.1-9.2-3.3-20.7,4.3-28.3l34-34 c7.6-7.6,19.1-9.4,28.3-4.3l36.9,20.4c16.6-10.6,34.7-19.1,54.1-24.9l12.2-40.4c2.7-10.3,12.3-17.6,23.4-17.6h48 c11.1,0,20.7,7.3,23.4,17.6l12.2,40.4c19.4,5.8,37.5,14.3,54.1,24.9l36.9-20.4c9.2-5.1,20.7-3.3,28.3,4.3l34,34 c7.6,7.6,9.4,19.1,4.3,28.3l-20.4,36.9c10.6,16.6,19.1,34.7,24.9,54.1l40.4,12.2c10.3,2.7,17.6,12.3,17.6,23.4v48 C513.5,220.9,506.2,211.3,495.9,209.8z"/><path d="M234.1,173.6c-45.5,0-82.5,37-82.5,82.5s37,82.5,82.5,82.5s82.5-37,82.5-82.5S279.6,173.6,234.1,173.6z"/></g></svg>
+    <h1>Jenkins CI/CD Pipeline 2</h1>
+    <p>Deployed on Kubernetes via Jenkins</p>
+    <div class="card-container">
+        <div class="badge">Deployed Successfully</div>
+        <div class="grid">
+            <div class="item"><div class="item-title">Platform</div><div class="item-value">Kubernetes</div></div>
+            <div class="item"><div class="item-title">Domain</div><div class="item-value">my-nginx.local</div></div>
+            <div class="item"><div class="item-title">Web Server</div><div class="item-value">Nginx</div></div>
+            <div class="item"><div class="item-title">CI/CD</div><div class="item-value">Jenkins</div></div>
+        </div>
+    </div>
+    <div class="footer">Jenkins-Example • Deployed by Jenkins Pipeline</div>
+</body>
+</html>
